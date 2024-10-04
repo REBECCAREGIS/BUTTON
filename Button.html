@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Background Color</title>
+    <style>
+        /* Set basic styles for buttons and page */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 100px;
+        }
+        .btn {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid black;
+            color: black; /* Default button text color */
+        }
+        .red-btn {
+            background-color: red;
+        }
+        .blue-btn {
+            background-color: blue;
+        }
+        .green-btn {
+            background-color: green;
+        }
+        .reset-btn {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <!-- Buttons with assigned colors -->
+    <button class="btn red-btn" onclick="changeBackground('red')">Red Button</button>
+    <button class="btn blue-btn" onclick="changeBackground('blue')">Blue Button</button>
+    <button class="btn green-btn" onclick="changeBackground('green')">Green Button</button>
+    <button class="btn reset-btn" onclick="resetBackground()">Reset</button>
+
+    <script>
+        // Function to change the background color
+        function changeBackground(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        // Function to reset to initial stage (white background)
+        function resetBackground() {
+            document.body.style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+</html>
